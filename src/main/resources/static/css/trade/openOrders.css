@@ -1,0 +1,48 @@
+
+.orders-table-card {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 10px 16px 12px;
+    background: var(--card);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+
+.orders-title {
+    font-size: 16px;
+    color: var(--yellow);
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+
+.orders-table {
+    width: 100%;
+}
+
+.side-buy {
+    color: var(--green, #22c55e);
+    font-weight: 600;
+}
+
+.side-sell {
+    color: var(--red, #ef4444);
+    font-weight: 600;
+}
+
+
+.cancel-btn {
+    padding: 4px 10px;
+    font-size: 11px;
+    border-radius: 999px;
+    border: 1px solid rgba(239, 68, 68, 0.8);
+    background: transparent;
+    color: var(--red, #ef4444);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.cancel-btn:hover {
+    background: rgba(239, 68, 68, 0.15);
+}

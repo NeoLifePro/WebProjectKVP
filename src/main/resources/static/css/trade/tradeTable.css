@@ -1,0 +1,54 @@
+
+.trades-card {
+    margin-top: 6px;
+}
+
+.trades-header {
+    font-size: 16px;
+    color: var(--yellow);
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+}
+
+thead {
+    color: var(--yellow);
+}
+
+th, td {
+    padding: 5px 6px;
+    text-align: left;
+    border-bottom: 1px solid rgba(55, 65, 81, 0.5);
+}
+
+tbody tr:nth-child(odd) {
+    background: rgba(15, 23, 42, 0.5);
+}
+
+.status-success {
+    color: var(--green);
+    font-weight: 600;
+}
+
+.status-failed {
+    color: var(--red);
+    font-weight: 600;
+}
+
+.trades-footer {
+    margin-top: 6px;
+    font-size: 11px;
+    color: var(--muted);
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.trades-footer span.link {
+    cursor: pointer;
+}

@@ -1,0 +1,25 @@
+.balances-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.balances-title {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.balances-list {
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.balances-list div {
+    margin-bottom: 2px;
+}
+
+.balances-list span {
+    color: #fff;
+}

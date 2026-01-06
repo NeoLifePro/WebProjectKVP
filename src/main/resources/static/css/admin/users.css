@@ -1,0 +1,139 @@
+.admin-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 16px;
+}
+
+.sidebar {
+    background:#121418;
+    border-radius:12px;
+    padding:12px;
+}
+.sidebar a {
+    display:block;
+    padding:10px 12px;
+    border-radius:10px;
+    text-decoration:none;
+    color:#e6e9ef;
+}
+.sidebar a.active {
+    background:#1f2430;
+}
+
+.card {
+    background:#121418;
+    border-radius:12px;
+    padding:16px;
+}
+
+.topline {
+    display:flex;
+    align-items:center;
+    gap:12px;
+    justify-content:space-between;
+    margin-bottom:12px;
+}
+
+.search {
+    display:flex;
+    gap:8px;
+    width:100%;
+}
+.search input {
+    flex:1;
+    padding:10px 12px;
+    border-radius:10px;
+    border:1px solid #2a2f3a;
+    background:#0f1216;
+    color:#e6e9ef;
+}
+
+.btn {
+    padding:8px 12px;
+    border-radius:10px;
+    border:1px solid #2a2f3a;
+    background:#1b202a;
+    color:#e6e9ef;
+    cursor:pointer;
+}
+.btn.primary {
+    background:#1f8b4c;
+    border-color:#1f8b4c;
+}
+.btn.danger {
+    background:#b04141;
+    border-color:#b04141;
+}
+.btn.link {
+    background:transparent;
+    border:none; color:#e6e9ef;
+    cursor:pointer;
+    text-decoration:underline;
+}
+
+table {
+    width:100%;
+    border-collapse:collapse;
+}
+th, td {
+    border-bottom:1px solid #232833;
+    padding:10px; text-align:left;
+    vertical-align:middle;
+}
+
+.pill {
+    padding:4px 8px;
+    border-radius:999px;
+    border:1px solid #2a2f3a;
+    background:#0f1216;
+    font-size:12px;
+}
+.muted {
+    color:#98a2b3;
+    font-size:12px;
+}
+
+.pagination {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:12px;
+}
+
+dialog {
+    border:none;
+    border-radius:12px;
+    padding:0;
+    background:#121418;
+    color:#e6e9ef;
+    width:560px;
+}
+.modal-header {
+    padding:14px 16px;
+    border-bottom:1px solid #232833;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.modal-body {
+    padding:16px;
+    display:grid;
+    gap:10px;
+}
+.modal-actions {
+    padding:12px 16px;
+    border-top:1px solid #232833;
+    display:flex;
+    justify-content:flex-end;
+    gap:8px;
+}
+
+.flash {
+    margin-left:12px;
+}
+.flash .msg {
+    color:#66bb6a;
+}
+.flash .error {
+    color:#ef5350;
+}

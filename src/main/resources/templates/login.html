@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My crypto Bot</title>
+    <link rel="icon" type="image/png" href="/img/logo.png" th:href="@{/img/logo.png}">
+    <link rel="stylesheet" th:href="@{/css/login.css}">
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+</head>
+<body>
+<header class="topbar">
+    <nav class="nav">
+        <div class="nav-left">
+            <a class="brand" href="/">CryptoBot</a>
+            <a class="active" href="/">Home</a>
+            <a href="/Dashboard">Dashboard</a>
+        </div>
+        <ul id="authLinks" class="nav-right">
+            <li><a href="/Login">Login</a></li>
+            <li><a href="/Register">Register</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="container">
+    <section class="login-conteiner">
+        <form class="login-form" th:action="@{/perform_login}" method="post">
+            <h2>Login</h2>
+            <div th:if="${param.error}"><p class="error">Bad credentials</p></div>
+            <div th:if="${msg}"><p class="msg" th:text="${msg}"></p></div>
+
+
+            <label for="username">Username or Email:</label>
+            <input type="text" id="username" name="username" placeholder="Enter username or email" required>
+
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+
+            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+            <button type="submit">Login</button>
+
+
+            <p class="register-link">No account? <a href="/Register">Register here</a></p>
+        </form>
+    </section>
+</main>
+<footer class="footer">© 2025 CryptoBot</footer>
+</body>
+</html>

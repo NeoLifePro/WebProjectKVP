@@ -1,0 +1,64 @@
+.api-keys-bar {
+    grid-column: 1 / -1;
+    margin-bottom: 12px;
+    padding: 10px 16px;
+    background: var(--panel);
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+
+
+.api-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.api-field label {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.api-field input {
+    background: var(--card-soft);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 6px 10px;
+    color: var(--text);
+    min-width: 260px;
+}
+
+
+
+.api-keys-bar #saveApiKeysBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 6px 18px;
+    border-radius: 999px;
+    border: none;
+
+    background: var(--accent);
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+
+    width: auto;
+    min-width: 120px;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+
+
+.api-keys-bar .api-save-msg {
+    font-size: 12px;
+    color: var(--green);
+    align-self: center;
+}

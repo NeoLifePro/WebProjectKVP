@@ -1,0 +1,65 @@
+.orders-table-wrapper {
+    margin-top: 6px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: rgba(15,23,42,0.8);
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.orders-table thead {
+    background: #020617dd;
+}
+
+.orders-table th,
+.orders-table td {
+    padding: 8px 10px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.orders-table th {
+    font-weight: 600;
+    color: var(--muted);
+    border-bottom: 1px solid #4c1d9522;
+}
+
+.orders-table tbody tr {
+    border-bottom: 1px solid #4c1d9511;
+}
+
+.orders-table tbody tr:nth-child(even) {
+    background: #0b112033;
+}
+
+.orders-table tbody tr:hover {
+    background: #1e293b66;
+}
+
+
+.order-side-buy {
+    color: var(--green);
+    font-weight: 600;
+}
+
+.order-side-sell {
+    color: var(--red);
+    font-weight: 600;
+}
+
+
+.order-status-success {
+    color: var(--green);
+    font-weight: 700;
+}
+
+.order-status-failed,
+.order-status-error {
+    color: var(--red);
+    font-weight: 700;
+}

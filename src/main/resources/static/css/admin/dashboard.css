@@ -1,0 +1,59 @@
+.admin-layout {
+    display:grid;
+    grid-template-columns:220px 1fr;
+    gap:16px;
+}
+.sidebar {
+    background:#121418;
+    border-radius:12px;
+    padding:12px;
+}
+.sidebar a {
+    display:block;
+    padding:10px 12px;
+    border-radius:10px;
+    text-decoration:none;
+    color:#e6e9ef;
+}
+.sidebar a.active {
+    background:#1f2430;
+}
+.card {
+    background:#121418;
+    border-radius:12px;
+    padding:16px;
+}
+.stats {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+    margin-bottom:12px;
+}
+.stat {
+    background:#0f1216;
+    border:1px solid #232833;
+    border-radius:12px;
+    padding:16px;
+}
+.stat h3 {
+    margin:0 0 6px 0;
+    font-size:14px;
+    color:#98a2b3;
+}
+.stat .num {
+    font-size:28px;
+    font-weight:700;
+}
+table {
+    width:100%;
+    border-collapse:collapse;
+}
+th, td {
+    border-bottom:1px solid #232833;
+    padding:10px;
+    text-align:left;
+}
+.muted {
+    color:#98a2b3;
+    font-size:12px;
+}
