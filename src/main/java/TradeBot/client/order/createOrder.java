@@ -41,7 +41,7 @@ public class createOrder {
         String url = "https://api.binance.com/api/v3/order";
         long timestamp = System.currentTimeMillis();
 
-        // Create parameters for creating an order
+
         Map<String, String> params = new HashMap<>();
         params.put("symbol", cryptoName + "USDC");
         params.put("side", side);
@@ -51,7 +51,6 @@ public class createOrder {
         params.put("price", price);
         params.put("timestamp", String.valueOf(timestamp));
 
-        // Calculate the HMAC signature
         String queryString = buildQueryString(params);
         String signature = calculateSignature(queryString);
         if (signature == null) return -1;
